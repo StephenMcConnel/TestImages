@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67B99457-AA45-4337-B7DE-90F677D70980}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestImages</RootNamespace>
+    <AssemblyName>TestImages</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AtkSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=313398f2149d753f, processorArchitecture=MSIL">
+      <HintPath>packages\AtkSharp-signed.3.22.24.37\lib\netstandard2.0\AtkSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CairoSharp, Version=3.22.24.37, Culture=neutral, PublicKeyToken=313398f2149d753f, processorArchitecture=MSIL">
+      <HintPath>packages\CairoSharp-signed.3.22.24.37\lib\netstandard2.0\CairoSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLine, Version=2.8.0.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
+      <HintPath>packages\CommandLineParser.2.8.0\lib\net461\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="DialogAdapters">
+      <HintPath>packages\DialogAdapters.Gtk2.0.1.9\lib\net461\DialogAdapters.dll</HintPath>
+    </Reference>
+    <Reference Include="Enchant.Net">
+      <HintPath>packages\Enchant.Net.1.4.2\lib\net461\Enchant.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="GdkSharp, Version=3.22.24.37, Culture=neutral, PublicKeyToken=313398f2149d753f, processorArchitecture=MSIL">
+      <HintPath>packages\GdkSharp-signed.3.22.24.37\lib\netstandard2.0\GdkSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GioSharp, Version=3.22.24.37, Culture=neutral, PublicKeyToken=313398f2149d753f, processorArchitecture=MSIL">
+      <HintPath>packages\GioSharp-signed.3.22.24.37\lib\netstandard2.0\GioSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GLibSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=313398f2149d753f, processorArchitecture=MSIL">
+      <HintPath>packages\GLibSharp-signed.3.22.24.37\lib\netstandard2.0\GLibSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GtkSharp">
+      <HintPath>packages\GtkSharp-signed.3.22.24.37\lib\netstandard2.0\GtkSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="icu.net, Version=2.6.0.0, Culture=neutral, PublicKeyToken=416fdd914afa6b66, processorArchitecture=MSIL">
+      <HintPath>packages\icu.net.2.6.0\lib\net451\icu.net.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor, Version=2.9.0.207, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ImageProcessor.2.9.0\lib\net452\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="L10NSharp">
+      <HintPath>packages\L10NSharp.4.0.3\lib\net461\L10NSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Magick.NET-Q16-AnyCPU, Version=7.17.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
+      <HintPath>packages\Magick.NET-Q16-AnyCPU.7.17.0.1\lib\net40\Magick.NET-Q16-AnyCPU.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkdownDeep">
+      <HintPath>packages\MarkdownDeep.NET.Patched.1.5.0.2\lib\net35\MarkdownDeep.dll</HintPath>
+    </Reference>
+    <Reference Include="MetadataExtractor, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MetadataExtractor.2.4.2\lib\net45\MetadataExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=2.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.DotNet.PlatformAbstractions.2.0.4\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel, Version=2.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyModel.2.0.4\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>packages\Mono.Posix.5.4.0.201\build\net45\win\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="NDesk.DBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f6716e4f9b2ed099, processorArchitecture=MSIL">
+      <HintPath>packages\NDesk.DBus.0.15.0\lib\NDesk.DBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PangoSharp, Version=3.22.24.37, Culture=neutral, PublicKeyToken=313398f2149d753f, processorArchitecture=MSIL">
+      <HintPath>packages\PangoSharp-signed.3.22.24.37\lib\netstandard2.0\PangoSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SIL.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cab3c8c5232dfcf2, processorArchitecture=MSIL">
+      <HintPath>packages\SIL.Core.8.0.0-beta0143\lib\net461\SIL.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SIL.Core.Desktop, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cab3c8c5232dfcf2, processorArchitecture=MSIL">
+      <HintPath>packages\SIL.Core.Desktop.8.0.0-beta0143\lib\net461\SIL.Core.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="SIL.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cab3c8c5232dfcf2, processorArchitecture=MSIL">
+      <HintPath>packages\SIL.Windows.Forms.8.0.0-beta0143\lib\net461\SIL.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="SIL.WritingSystems, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cab3c8c5232dfcf2, processorArchitecture=MSIL">
+      <HintPath>packages\SIL.WritingSystems.8.0.0-beta0143\lib\net461\SIL.WritingSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.ImageSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
+      <HintPath>packages\SixLabors.ImageSharp.1.0.0-rc0001\lib\netstandard2.0\SixLabors.ImageSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=14d24e064e474331, processorArchitecture=MSIL">
+      <HintPath>packages\Spart.1.0.0\lib\net461\Spart.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.FileSystem.AccessControl, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.FileSystem.AccessControl.4.7.0\lib\net461\System.IO.FileSystem.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.4.7.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TagLibSharp">
+      <HintPath>packages\TagLibSharp.2.2.0\lib\net45\TagLibSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="XmpCore, Version=6.1.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\XmpCore.6.1.10\lib\net35\XmpCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImageLoader.cs" />
+    <Compile Include="MemoryManagement.cs" />
+    <Compile Include="MetaExtract.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResizeImage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="lib\gm\colors.mgk" />
+    <Content Include="lib\gm\delegates.mgk" />
+    <Content Include="lib\gm\log.mgk" />
+    <Content Include="lib\gm\Microsoft.VC90.CRT.manifest" />
+    <Content Include="lib\gm\Microsoft.VC90.OpenMP.manifest" />
+    <Content Include="lib\gm\modules.mgk" />
+    <Content Include="lib\gm\type-ghostscript.mgk" />
+    <Content Include="lib\gm\type.mgk" />
+    <Content Include="lib\gm\ChangeLog.txt" />
+    <Content Include="lib\gm\Copyright.txt" />
+    <Content Include="lib\gm\CORE_RL_bzlib_.dll" />
+    <Content Include="lib\gm\CORE_RL_jbig_.dll" />
+    <Content Include="lib\gm\CORE_RL_jp2_.dll" />
+    <Content Include="lib\gm\CORE_RL_jpeg_.dll" />
+    <Content Include="lib\gm\CORE_RL_lcms_.dll" />
+    <Content Include="lib\gm\CORE_RL_libxml_.dll" />
+    <Content Include="lib\gm\CORE_RL_magick_.dll" />
+    <Content Include="lib\gm\CORE_RL_png_.dll" />
+    <Content Include="lib\gm\CORE_RL_tiff_.dll" />
+    <Content Include="lib\gm\CORE_RL_ttf_.dll" />
+    <Content Include="lib\gm\CORE_RL_wand_.dll" />
+    <Content Include="lib\gm\CORE_RL_webp_.dll" />
+    <Content Include="lib\gm\CORE_RL_xlib_.dll" />
+    <Content Include="lib\gm\CORE_RL_zlib_.dll" />
+    <Content Include="lib\gm\gm.exe" />
+    <Content Include="lib\gm\GraphicsMagick.ico" />
+    <Content Include="lib\gm\IM_MOD_RL_bmp_.dll" />
+    <Content Include="lib\gm\IM_MOD_RL_jbig_.dll" />
+    <Content Include="lib\gm\IM_MOD_RL_jnx_.dll" />
+    <Content Include="lib\gm\IM_MOD_RL_jp2_.dll" />
+    <Content Include="lib\gm\IM_MOD_RL_jpeg_.dll" />
+    <Content Include="lib\gm\IM_MOD_RL_matte_.dll" />
+    <Content Include="lib\gm\IM_MOD_RL_png_.dll" />
+    <Content Include="lib\gm\IM_MOD_RL_tiff_.dll" />
+    <Content Include="lib\gm\IM_MOD_RL_xc_.dll" />
+    <Content Include="lib\gm\licenses\bzlib.txt" />
+    <Content Include="lib\gm\licenses\jbig.txt" />
+    <Content Include="lib\gm\licenses\jp2.txt" />
+    <Content Include="lib\gm\licenses\jpeg.txt" />
+    <Content Include="lib\gm\licenses\lcms.txt" />
+    <Content Include="lib\gm\licenses\libxml.txt" />
+    <Content Include="lib\gm\licenses\png.txt" />
+    <Content Include="lib\gm\licenses\README.txt" />
+    <Content Include="lib\gm\licenses\tiff.txt" />
+    <Content Include="lib\gm\licenses\ttf-FTL.txt" />
+    <Content Include="lib\gm\licenses\ttf-GPL.txt" />
+    <Content Include="lib\gm\licenses\ttf.txt" />
+    <Content Include="lib\gm\licenses\webp.txt" />
+    <Content Include="lib\gm\licenses\zlib.txt" />
+    <Content Include="lib\gm\msvcr90.dll" />
+    <Content Include="lib\gm\README.txt" />
+    <Content Include="lib\gm\vcomp90.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\NDesk.DBus.0.15.0\build\NDesk.DBus.targets" Condition="Exists('packages\NDesk.DBus.0.15.0\build\NDesk.DBus.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\NDesk.DBus.0.15.0\build\NDesk.DBus.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NDesk.DBus.0.15.0\build\NDesk.DBus.targets'))" />
+  </Target>
+  <ItemGroup>
+    <GmFiles Include="lib\gm\*.*"/>
+  </ItemGroup>
+  <ItemGroup>
+    <GmLicenseFiles Include="lib\gm\licenses\*.*"/>
+  </ItemGroup>
+  <Target Name="AfterBuild">
+    <Copy SourceFiles="@(GmFiles)" DestinationFolder="$(OutDir)\gm" />
+    <Copy SourceFiles="@(GmLicenseFiles)" DestinationFolder="$(OutDir)\gm\licenses" />
+  </Target>
+</Project>
